@@ -1,0 +1,17 @@
+---
+title: 'MATHSTAT455'
+author: 'Kate Liberko and Isabella Light'
+site: bookdown::bookdown_site
+output: 
+  bookdown::gitbook:
+    split_by: chapter
+    config:
+      toc:
+        collapse: chapter
+        scroll_highlight: yes
+documentclass: book  
+github-repo: kateliberko/MathStatBayesFactor
+---
+  
+# Preface {-}
+ 
