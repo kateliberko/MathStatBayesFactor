@@ -1,11 +1,14 @@
 ---
-title: 'Introduction'
+title: 'Bayes Factor'
 output: html_document
 ---
+
 # Introduction
 
 This chapter is an overview of the methods that
 we propose to solve an **important problem**.
+
+## Chapter 1.1 ???
 
 # Another one
 helloooo
