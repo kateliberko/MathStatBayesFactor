@@ -2,6 +2,6 @@ book_filename: "MathStatBayesFactor"
 delete_merged_file: true
 language:
   ui:
-    chapter_name: "Chapter "
-rmd_files: ['index.Rmd']
+    chapter_name: "Chapter 1 "
+rmd_files: ['index.Rmd', 'Chapter_1.Rmd', 'Chapter_2.Rmd']
 output_dir: "docs"
