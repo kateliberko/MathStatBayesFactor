@@ -1,6 +1,6 @@
 ---
 title: 'MATHSTAT455'
-author: 'Kate Liberko and Isabella Light'
+author: 'Mathematical Statistics Capstone written by Kate Liberko and Isabella Light'
 site: bookdown::bookdown_site
 output: 
   bookdown::gitbook:
@@ -12,7 +12,8 @@ output:
 documentclass: book  
 github-repo: kateliberko/MathStatBayesFactor
 ---
+
   
 # Preface {-}
  
-This is my test text
+Hi, thanks for joining us on our journey to learn about Bayes Factor. In this bookdown we will explore Bayes Factor in all of it's glory and have fun at the same time! Enjoy :) 

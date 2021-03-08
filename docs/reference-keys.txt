@@ -1,3 +1,8 @@
-introduction
-chapter-1.1
-another-one
+motivation
+intro-to-bayes-factor
+likelihood
+common-pdfs
+interpreting-the-ratio
+example-problems
+common-uses
+critiques-of-bayes-factor-approach
