@@ -10,12 +10,12 @@ a-bayes-walkthrough
 interpreting-the-ratio
 likelihood-approach-to-find-a-bayes-factor
 what-is-likelihood
-example-problemsexercises
+example-problems
 using-posteriors-and-priors
 using-likelihoods
 real-world-applications
 hot-hands
 ozone-exceedances
 formation-of-mutations-in-e.coli-dna
-critiques-of-bayes-factor-approach
+critique-and-rebuttal-of-bayes-factor
 references

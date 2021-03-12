@@ -206,10 +206,10 @@ Knowing that your roommate has seen the movie, you conclude that they are 1.98 t
 
 $$
 \begin{aligned}
-\frac{P(\textit{fan }| \textit{ seen movie})}{P(\textit{not fan }| \textit{ seen movie} )}= \frac{P(\textit{fan})}{P(\textit{not fan})} \cdot \frac{P( \textit{ seen movie } | \textit{ fan })}{P(\textit{seen movie }| \textit{ not fan })}
-= \frac{0.6}{0.4} \cdot \frac{0.99}{0.5}
-= 1.5 \cdot 1.98
-= 2.97
+\frac{P(\textit{fan }| \textit{ seen movie})}{P(\textit{not fan }| \textit{ seen movie} )} & = \frac{P(\textit{fan})}{P(\textit{not fan})} \cdot \frac{P( \textit{ seen movie } | \textit{ fan })}{P(\textit{seen movie }| \textit{ not fan })}\\
+&= \frac{0.6}{0.4} \cdot \frac{0.99}{0.5}\\
+& = 1.5 \cdot 1.98\\
+& = 2.97
 \end{aligned}
 $$
 
@@ -280,7 +280,7 @@ Rising air-pollution is a topic that is very prevalent in today’s world. In th
 In a molecular biology experiment, researchers hypothesized that mutations leading to “acetate utilization deficiency” in the uvrE strain of E. coli bacteria, were caused by an abnormal error-prone DNA repair mechanism and not by DNA replication. If this hypothesis was correct, then the mutation would not be linked to mutations at neighboring loci. But if DNA replication occurred instead of the error-prone DNA repair mechanism, then the mutation would be linked to the rare trait of “rifampin resistance.” To test the hypothesis, researchers made two rows of cells; one containing “selected” cells for rifampin resistance and the other made up of “unselected” cells. The absence of a linkage (predicted by the hypothesis) would suggest that the proportions $p_1$ and $p_2$ of bacteria showing acetate utilization deficiency in both cell lines would be equal. The researchers found that the two proportions were indeed approximately equal and supported their hypothesis of error-prone DNA causing the mutation. However, using this hypothesis test, the researchers were only able accept the null, but they were not able to assess the evidence in favor of the null. Moreover, the researchers had data on 12 other E. coli strains that all showed varying ranges of difference between $p_1$ and $p_2$. Therefore, each strain appeared to have its own level of how it was affected by the error-prone DNA repair mechanism, some being more strongly impacted than others. The fact that they wished to know the strength of the evidence in favor of their hypothesis, along with the fact that they had more data to construct an alternative hypothesis, or prior information, indicate that a Bayesian approach would be most useful. A Bayes Factor would give them a ratio between the null and the alternative hypotheses therefore indicating the degree to which the data favors the null.
 
 
-# Critiques of Bayes Factor Approach
+# Critique and Rebuttal of Bayes Factor
 
 Math is thought to be objective, but the numbers used to calculate Bayes Factors are often subjective, thus raising the question of how trustworthy the resulting ratio actually is. When using Bayesian statistics, you create prior assumptions before any data is gathered, this subjective choice influences the outcome of the analysis. For example, imagine you and a friend are going to an amusement park. This will be your first time ever riding a roller coaster, and you are super nervous. Your friend however, has been coming to this amusement park for years, and assures you that roller coasters are safe, and that you will be fine. The time comes to ride your first coaster and your heart starts beating faster, and you begin to sweat. You believe something will go wrong before the ride is over, but your friend is certain that everything will be fine. Finally, your first ride comes to an end. You’re still in one piece. You and your friend continue to try more and more coasters as you get more comfortable. By the time you leave the park, you realize maybe your fear of roller coasters was all for nothing.$\\$
 $\\$
@@ -298,9 +298,13 @@ Clyde, Merlise, et al. “An Introduction to Bayesian Thinking.” Chapter 3 Los
 $\\$
 CrashCourse. “You Know I'm All About That Bayes: Crash Course Statistics #24.” YouTube, YouTube, 25 July 2018, www.youtube.com/watch?v=9TDjifpGj-k&ab_channel=CrashCourse.$\\$
 $\\$
+Dummies, www.dummies.com/education/math/statistics/how-to-determine-a-p-value-when-testing-a-null-hypothesis/. Image$\\$
+$\\$
 Etz, Alex. “Understanding Bayes: A Look at the Likelihood6.” The Etz-Files, 12 Sept. 2018, alexanderetz.com/2015/04/15/understanding-bayes-a-look-at-the-likelihood/.$\\$
 $\\$
 Halsey Lewis G. 2019. The reign of the p-value is over: what alternative analyses could we employ to fill the power vacuum?Biol. Lett.152019017420190174$\\$
+$\\$
+Https://Thinkingbeyondtheboxblog.wordpress.com/2018/01/13/Bayesian-Statistics-Understanding-the-Revolution-in-Science/.Image $\\$
 $\\$
 Kass, Robert E, and Adrian E Raftery. “Bayes Factors.” American Statistical Association, 1995. $\\$
 $\\$
@@ -308,6 +312,10 @@ Likelihood function. (2020, November 26). Retrieved from https://en.wikipedia.or
 $\\$
 “Lindley's Paradox.” Wikipedia, Wikimedia Foundation, 27 Sept. 2020, en.wikipedia.org/wiki/Lindley%27s_paradox#Bayesian_approach. $\\$
 $\\$
+Ormerod, John. Twitter, twitter.com/john_t_ormerod/status/1181456582619451392/photo/3. Image $\\$
+$\\$
 Ostrum, R. (2019, September 16). Prior odds - their meaning and significance. Retrieved March 12, 2021, from https://rbostrum.ca/wp/prior-odds-and-their-significance/$\\$
 $\\$
 Starmer, Josh. “StatQuest: P Values, Clearly Explained.” YouTube, YouTube, 20 Nov. 2016, www.youtube.com/watch?v=5Z9OIYA8He8&ab_channel=StatQuestwithJoshStarmer. 
+
+ 
