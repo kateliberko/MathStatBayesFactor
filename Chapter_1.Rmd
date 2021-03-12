@@ -131,7 +131,9 @@ Now we can use our data to calculate a Bayes Factor by plugging it into formula 
 $$
 \begin{aligned}
 \textit{Bayes Factor } & = \frac{P(H_1| \textit{ plant stats})}{P(H_0|\textit{ plant stats})} \cdot \frac{P(H_0)}{P(H_1)}\\
+\\
 & = \frac{0.8}{0.2} \cdot \frac{0.6}{0.4}\\
+\\
 & = 6
 \end{aligned}
 $$
@@ -207,8 +209,11 @@ Knowing that your roommate has seen the movie, you conclude that they are 1.98 t
 $$
 \begin{aligned}
 \frac{P(\textit{fan }| \textit{ seen movie})}{P(\textit{not fan }| \textit{ seen movie} )} & = \frac{P(\textit{fan})}{P(\textit{not fan})} \cdot \frac{P( \textit{ seen movie } | \textit{ fan })}{P(\textit{seen movie }| \textit{ not fan })}\\
+\\
 &= \frac{0.6}{0.4} \cdot \frac{0.99}{0.5}\\
+\\
 & = 1.5 \cdot 1.98\\
+\\
 & = 2.97
 \end{aligned}
 $$
