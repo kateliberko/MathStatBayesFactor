@@ -17,3 +17,8 @@ github-repo: kateliberko/MathStatBayesFactor
 # Preface {-}
  
 Hi, thanks for joining us on our journey to learn about Bayes Factor. In this bookdown we will explore Bayes Factor in all of it's glory and have fun at the same time! Enjoy :) 
+
+
+```{r, fig.align='center', echo=FALSE}
+knitr::include_graphics(rep("darthvader.jpg", 1), dpi = 70)
+```

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Bayes Factor</title>
-  <meta name="description" content="Bayes Factor" />
+  <title> Chapter 2 Background | Bayes Factor</title>
+  <meta name="description" content=" Chapter 2 Background | Bayes Factor" />
   <meta name="generator" content="bookdown 0.21.6 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Bayes Factor" />
+  <meta property="og:title" content=" Chapter 2 Background | Bayes Factor" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="kateliberko/MathStatBayesFactor" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Bayes Factor" />
+  <meta name="twitter:title" content=" Chapter 2 Background | Bayes Factor" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="motivation-of-topic.html"/>
+<link rel="prev" href="motivation-of-topic.html"/>
+<link rel="next" href="intro-to-bayes-factor.html"/>
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -117,23 +117,55 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Bayes Factor</h1>
-<p class="author"><em>Mathematical Statistics Capstone written by Kate Liberko and Isabella Light</em></p>
+<div id="background" class="section level1" number="2">
+<h1><span class="header-section-number"> Chapter 2</span> Background</h1>
+<p>In this chapter we will be covering background terminology that is useful for understanding Bayes Factors. This will include Frequentist vs Bayesian statistics and topics within each. These include hypothesis testing and p values under the Frequentist method, and prior and posterior odds under the Bayesian approach. If you already feel comfortable with these topics feel free to skip them.</p>
+<div id="bayesian-vs-frequentist-statistics" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Bayesian vs Frequentist Statistics</h2>
+<p>Frequentists believe that function parameters are fixed unknown constants with no distribution. Instead of updating their beliefs, frequentists look at a data set and draw conclusions based on the frequency of this data. Bayesian statistics provide formal methods of incorporating prior knowledge into the estimation of unknown parameters. In Bayesian statistics, parameters are treated as random variables (with a distribution) and not as constants. This allows us to update our beliefs in light of new data with hopes of keeping our models accurate and relevant. Bayesians use a prior distribution multiplied by a likelihood equation to achieve a posterior distribution. For any new data received, this posterior will become the new prior and be multiplied by the likelihood to arrive at an updated posterior. Many statisticians consider Bayesian statistics to be the ‘logical approach’ to evidence evaluation.</p>
 </div>
-<div id="preface" class="section level1 unnumbered">
-<h1>Preface</h1>
-<p>Hi, thanks for joining us on our journey to learn about Bayes Factor. In this bookdown we will explore Bayes Factor in all of it’s glory and have fun at the same time! Enjoy :)</p>
-<p><img src="darthvader.jpg" width="372" style="display: block; margin: auto;" /></p>
-
+<div id="hypothesis-testing" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Hypothesis Testing</h2>
+<p>Hypothesis testing is used to test if the results of an experiment are significant and what the odds are that they happened by chance. One starts by stating two conflicting theories: the null hypothesis <span class="math inline">\(H_0\)</span>, and the alternative hypothesis, <span class="math inline">\(H_1\)</span>. Data will either support or fail to support your null hypothesis. If your data doesn’t support the null, this means that the data probably happened by chance. In this case you will not be able to replicate your experiment and you should reject the null. On the other hand, if your data do support the null hypothesis, this means your data probably didn’t happen by chance. This experiment can be replicated and you should fail to reject the null.</p>
+<p><img src="hypothesis.jpg" width="428" style="display: block; margin: auto;" /></p>
+</div>
+<div id="the-p-value" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> The P-value</h2>
+<p>The p-value in hypothesis testing is the probability of obtaining results equal to or more extreme than the observed results, assuming that the null hypothesis is true. If the p-value is less than 𝛼 (the significance level), this means that there is a small probability of observing this data if the null hypothesis were true, therefore suggesting that we should reject the null hypothesis. If the p-value is above 𝛼, then we fail to reject the null. <span class="math inline">\(\\\)</span>
+<span class="math inline">\(\\\)</span>
+The P-Value Approach: <span class="math inline">\(\\\)</span>
+Assume that the null hypothesis is true. <span class="math inline">\(\\\)</span>
+Compute the test statistic <span class="math inline">\(z_0 = \frac{\bar{X} - \mu_0}{\sigma / \sqrt{n}}\)</span> <span class="math inline">\(\\\)</span></p>
+<p><img src="pvalue.png" width="1412" style="display: block; margin: auto;" /></p>
+</div>
+<div id="prior-odds" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Prior Odds</h2>
+<p>A key aspect to Bayesian statistics is the use of prior odds. Priors are an existing belief about the probability of an event. The prior odds are the ratio of the probabilities of the two competing hypotheses.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\textit{Prior Odds} = \frac{P(H_1)}{P(H_0)}
+\end{aligned}
+\]</span>
+<span class="math inline">\(\\\)</span></p>
+<p><img src="solo_prior.jpg" width="401" style="display: block; margin: auto;" /></p>
+</div>
+<div id="posterior-odds" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Posterior Odds</h2>
+<p>Posterior odds, are the updated probability. They are the result of taking your prior odds and revising them by taking into account new information.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\textit{ Posterior Odds}= \frac{P(H_1| \textit{ data})}{P(H_0| \textit{ data})}
+\end{aligned}
+\]</span></p>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="motivation-of-topic.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="motivation-of-topic.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="intro-to-bayes-factor.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
