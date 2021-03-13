@@ -136,7 +136,7 @@
 \\
 &amp; = \frac{\textit{ Posterior }H_1}{\textit{ Posterior }H_0} \cdot \frac{\textit{ Prior }H_0}{\textit{ Prior }H_1}\\ 
 \\
-&amp; = \frac{P(H_1|\textit{ data})}{P(H_0|\textit{ data})} \cdot \frac{P(H_0)}{P(H_1)}\\
+&amp; = \frac{P(H_1|\textit{ data})}{P(H_0|\textit{ data})} \cdot \frac{P(H_0)}{P(H_1)} \text{  }\textbf{ [Formula 1]}
 \\
 &amp; = \textit{ Posterior Odds} \cdot \frac{1}{\textit{Prior Odds}}\\
 \\
@@ -196,13 +196,13 @@ In general if the Bayes Factor (set up as <span class="math inline">\(\frac{Like
 \end{aligned}
 \]</span></p>
 <p>In this equation we see the likelihood ratio multiplied by the prior odds is equal to the posterior odds. If we divide both sides of the equation by the prior odds we get posterior odds divided by the prior odds are equal to the likelihood ratio. This means the Bayes Factor is the same as the likelihood ratio. <span class="math inline">\(\\\)</span>
-When the hypotheses are simple, say <span class="math inline">\(H_0 = 5\)</span>, and <span class="math inline">\(H_1 = 6\)</span>, we can find the Bayes Factor by finding the posterior odds and dividing that by the prior odds as done in the plant example above. However, this method will not work if our hypotheses are a range of numbers, say <span class="math inline">\(H_0 \leq 5\)</span> and <span class="math inline">\(H_1 \geq 5\)</span>. In this case, we must integrate in order to find all possibilities of the hypotheses. We will use equation:</p>
+When the hypotheses are simple, say <span class="math inline">\(H_0 = 5\)</span>, and <span class="math inline">\(H_1 = 6\)</span>, we can find the Bayes Factor by finding the posterior odds and dividing that by the prior odds as done in the plant example above. However, this method will not work if our hypotheses are a range of numbers, say <span class="math inline">\(H_0 &lt; 5\)</span> and <span class="math inline">\(H_1 \geq 5\)</span>. In this case, we must integrate in order to find all possibilities of the hypotheses. We will use equation:</p>
 <p><span class="math display">\[
 \begin{aligned} 
-  P(D|H_k) = \int_0^1 P(D| \theta_k, H_k) \cdot \pi(\theta_k | H_k) d \theta
+  P(D|H_k) = \int_0^1 P(D| \theta_k, H_k) \cdot \pi(\theta_k | H_k) d \theta \text{  } \textbf{ [Formula 2]}
 \end{aligned} 
-\]</span>
-Where <span class="math inline">\(P(D|H_k)\)</span> is the integrated likelihood<span class="math inline">\(\\\)</span>
+\]</span></p>
+<p>Where <span class="math inline">\(P(D|H_k)\)</span> is the integrated likelihood<span class="math inline">\(\\\)</span>
 <span class="math inline">\(P(D| \theta_k, H_k)\)</span> is the probability density<span class="math inline">\(\\\)</span>
 <span class="math inline">\(\pi(\theta_k | H_k)\)</span> is the prior density (<span class="math inline">\(\pi\)</span> as a function), and<span class="math inline">\(\\\)</span>
 <span class="math inline">\(D\)</span> as the observed data<span class="math inline">\(\\\)</span>
@@ -210,7 +210,7 @@ Where <span class="math inline">\(P(D|H_k)\)</span> is the integrated likelihood
 Finding <span class="math inline">\(P(D | H_0)\)</span> and <span class="math inline">\(P(D | H_1)\)</span> by using equation (2), we can find the two likelihood equations and then take the ratio of these to calculate a Bayes Factor. The Bayes Factor is equal to the likelihood ratio.</p>
 <div id="what-is-likelihood" class="section level3" number="3.3.1">
 <h3><span class="header-section-number">3.3.1</span> What is Likelihood?</h3>
-<p>A likelihood equation measures how well a statistical model fits a sample of data for different values of unknown parameters. Likelihood is proportional to a probability; it is not a probability itself. For example, the likelihood of a hypothesis given data is proportional to the probability of that data given the hypothesis is true multiplied by any positive constant: <span class="math inline">\(L(H|D) \propto P(D|H)K\)</span>. A big difference between likelihood and probability is the interpretation of what is what can vary. For conditional probabilities, the hypothesis is fixed while the data varies: <span class="math inline">\(P(D|H)\)</span>. Likelihood equations however, predict the likelihood of a hypothesis occurring conditioned on fixed data: <span class="math inline">\(L(H|D)\)</span>. <span class="math inline">\(\\\)</span></p>
+<p>A likelihood equation measures how well a statistical model fits a sample of data for different values of unknown parameters. Likelihood is proportional to a probability; it is not a probability itself. For example, the likelihood of a hypothesis given data is proportional to the probability of that data given the hypothesis is true multiplied by any positive constant: <span class="math inline">\(L(H|D) = P(D|H)K\)</span>. A big difference between likelihood and probability is the interpretation of what can vary. For conditional probabilities, the hypothesis is fixed while the data varies: <span class="math inline">\(P(D|H)\)</span>. Likelihood equations however, predict the likelihood of a hypothesis occurring conditioned on fixed data: <span class="math inline">\(L(H|D)\)</span>. <span class="math inline">\(\\\)</span></p>
 <p>The Law of Likelihood states that “within the framework of a statistical model, a particular set of data supports one statistical hypothesis better than another if the likelihood of the first hypothesis, on the data, exceeds the likelihood of the second hypothesis” (Etz).
 The value of a single likelihood is meaningless; only in comparing likelihoods, as we do for a Bayes Factor, do we find meaning.</p>
 </div>
