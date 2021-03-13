@@ -311,6 +311,12 @@ In this example, you and your friend’s prior beliefs about roller coasters wer
 $\\$
 This is only the case if given enough time and trials to update the beliefs enough to pull you and your friends beliefs closer together. However, if there are not enough updates or new collections of data, the two differing beliefs may not come together in the end. Say for example, after your first roller coaster ride, a thunder storm arrives shutting down the park for the rest of the day. Since you only had one exposure to a roller coaster ride, you probably still feel the same about roller coasters and you do not believe they are safe nor do you feel comfortable riding. Yet your friend still believes they are not scary at all but in fact super safe. In this case, your final posterior beliefs are different given the same data you collected on the ride. This is an example of when a Bayes factor may be influenced more by opinion and less by observed data.
 
+# Conclusion
+Our journey of Bayes Factors has come to an end. We've learned that Bayes Factors can be more applicable than the p-value with the option to keep updating them. They provide a great comparison between models, and allow us to interpret them as we wish. $\\$
+```{r, fig.align='center', echo=FALSE}
+knitr::include_graphics(rep("meme.png", 1), dpi = 150)
+
+```
 
 
 # References
